@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Character Counter</title>
+
+    <link rel="stylesheet"
+    href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Message Counter</h1>
+
+        <p class="subtitle">
+            Maximum 200 Characters
+        </p>
+
+        <textarea id="message"
+        placeholder="Type your message here..."></textarea>
+
+
+
+        <!-- COUNTER -->
+
+        <div class="counter-box">
+
+            <p id="count">
+                0 / 200 Characters
+            </p>
+
+            <p id="remaining">
+                200 Remaining
+            </p>
+
+        </div>
+
+
+
+        <!-- WORD COUNTER -->
+
+        <p id="wordCount">
+            0 Words
+        </p>
+
+
+
+        <!-- PROGRESS BAR -->
+
+        <div class="progress-container">
+
+            <div class="progress-bar"
+            id="progressBar"></div>
+
+        </div>
+
+
+
+        <!-- WARNING -->
+
+        <p id="warning"></p>
+
+
+
+        <!-- COPY BUTTON -->
+
+        <button onclick="copyText()"
+        class="copy-btn">
+
+            Copy Message
+
+        </button>
+
+
+
+        <!-- CLEAR BUTTON -->
+
+        <button onclick="clearText()">
+
+            Clear Message
+
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
